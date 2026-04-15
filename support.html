@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center - Fynance</title>
+    <!-- Importing Lato Font to match the app -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #00838F; /* RrColor.primary */
+            --text-main: #333333;    /* RrColor.text1 */
+            --text-secondary: #666666; /* RrColor.text2 */
+            --bg-gradient: linear-gradient(135deg, #E0F7FA 0%, #F1F8E9 50%, #FFFDE7 100%);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-weight: 900;
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .support-intro {
+            text-align: center;
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            padding-bottom: 8px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(0, 131, 143, 0.05);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-main);
+        }
+
+        .contact-card {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .btn-email {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 900;
+            transition: transform 0.2s;
+        }
+
+        .btn-email:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px; }
+            h1 { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Support Center</h1>
+    <p class="support-intro">How can we help you today? Check our frequently asked questions or contact us directly.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question">How does the receipt scanning work?</div>
+        <div class="faq-answer">Fynance uses advanced AI and OCR technology. Just take a clear photo of your receipt, and our AI will automatically extract the vendor name, date, items, and total amount.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Where is my financial data stored?</div>
+        <div class="faq-answer">Your privacy is our priority. All your transaction data and receipt images are stored locally on your device's secure storage. We do not store your private financial data on our servers.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I backup my data?</div>
+        <div class="faq-answer">Go to Profile > Backup & Restore. You can create an offline backup (ZIP file) and save it to your local storage or cloud drive. Remember to keep this file safe!</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What if the AI makes a mistake?</div>
+        <div class="faq-answer">While our AI is highly accurate, it can sometimes misread faded receipts. You can always edit the transaction details manually after the scan is complete.</div>
+    </div>
+
+    <div class="contact-card">
+        <h3>Still Need Help?</h3>
+        <p>Our team is ready to assist you with any technical issues or feedback.</p>
+        <a href="mailto:hasannurulibad@gmail.com" class="btn-email">Contact Support</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Fynance App. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
