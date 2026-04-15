@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Fynance</title>
+    <!-- Importing Lato Font to match the app -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #00838F; /* RrColor.primary */
+            --text-main: #333333;    /* RrColor.text1 */
+            --text-secondary: #666666; /* RrColor.text2 */
+            /* Background matching your app's gradient */
+            --bg-gradient: linear-gradient(135deg, #E0F7FA 0%, #F1F8E9 50%, #FFFDE7 100%);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-weight: 900;
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            border-bottom: 1px solid rgba(0, 131, 143, 0.1);
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-main);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: rgba(0, 131, 143, 0.05);
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 20px;
+        }
+
+        /* Responsive adjustments for mobile view */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px 0;
+                width: 95%;
+            }
+            h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Terms & Conditions</h1>
+    <div class="last-updated">Last Updated: April 15, 2026</div>
+
+    <p>Welcome to <strong>Fynance</strong>. By accessing or using our application, you agree to be bound by these terms. Please read them carefully.</p>
+
+    <div class="highlight-box">
+        Disclaimer: Fynance uses Artificial Intelligence (AI) to process financial data. The information provided is for educational purposes and does not constitute professional financial advice.
+    </div>
+
+    <h2>1. Service Description</h2>
+    <p>Fynance is a personal finance management tool that allows users to:</p>
+    <ul>
+        <li>Scan and digitize shopping receipts using AI and OCR technology.</li>
+        <li>Track expenses and income through an automated dashboard.</li>
+        <li>Interact with an AI Assistant regarding their financial data.</li>
+        <li>Secure local data using PIN and Biometric authentication.</li>
+    </ul>
+
+    <h2>2. Data Privacy & AI Processing</h2>
+    <p>Your privacy is our priority. Fynance operates on the following principles:</p>
+    <ul>
+        <li><strong>Local Storage:</strong> Most of your financial data is stored locally on your device using an encrypted database.</li>
+        <li><strong>AI Analysis:</strong> When you scan a receipt or ask a question, relevant text is sent to third-party AI providers (Google Gemini or DeepSeek) for processing. This data is not used for advertising.</li>
+        <li><strong>Security:</strong> We do not have access to your PIN or Biometric data. These are managed by your device's secure enclave.</li>
+    </ul>
+
+    <h2>3. User Responsibility</h2>
+    <p>As a user, you are responsible for:</p>
+    <ul>
+        <li>Maintaining the confidentiality of your security PIN.</li>
+        <li>Performing regular backups using the "Backup & Restore" feature to prevent data loss.</li>
+        <li>Verifying the accuracy of AI-extracted data from receipts.</li>
+    </ul>
+
+    <h2>4. Limitation of Liability</h2>
+    <p>Fynance shall not be liable for any financial losses or decisions made based on AI-generated insights. The AI may occasionally produce inaccurate results (hallucinations). You agree to use the app at your own risk.</p>
+
+    <h2>5. Local Backups</h2>
+    <p>The "Offline Backup" feature generates a .zip file on your device storage. Protecting this file from unauthorized access or accidental deletion is the user's sole responsibility.</p>
+
+    <h2>6. Changes to Terms</h2>
+    <p>We reserve the right to modify these terms at any time. Continued use of the app following any changes constitutes your acceptance of the new Terms & Conditions.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions about these Terms, please contact us at <strong>support@fynance.app</strong>.</p>
+
+    <footer>
+        &copy; 2026 Fynance App. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
