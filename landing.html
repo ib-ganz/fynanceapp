@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynance - AI Receipt Scanner & Expense Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- NAVIGATION -->
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold text-blue-600">Fynance</div>
+        <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+            <a href="#features" class="hover:text-blue-600">Fitur</a>
+            <a href="#pricing" class="hover:text-blue-600">Harga</a>
+            <a href="#tos" class="hover:text-blue-600">Syarat & Ketentuan</a>
+        </div>
+        <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition">Download</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-bg px-8 py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold">AI-Powered Finance Manager</span>
+            <h1 class="text-4xl md:text-600 font-bold mt-6 mb-4 leading-tight">Kelola Keuangan Lebih <br><span class="text-blue-600">Cerdas dengan AI</span></h1>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">Scan struk belanja, catat pengeluaran otomatis, dan dapatkan analisis keuangan mendalam hanya dalam hitungan detik.</p>
+            <div class="mt-10">
+                <button class="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-black">Coba Gratis Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-20 px-8 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16">Kenapa Memilih Fynance?</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-8 border rounded-3xl hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI Receipt Scanner</h3>
+                <p class="text-gray-500">Cukup foto struk belanja, AI kami akan membaca nominal, tanggal, dan kategori secara otomatis.</p>
+            </div>
+            <div class="p-8 border rounded-3xl hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Smart Insights</h3>
+                <p class="text-gray-500">Laporan keuangan visual yang mudah dimengerti untuk membantu Anda menabung lebih banyak.</p>
+            </div>
+            <div class="p-8 border rounded-3xl hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Keamanan Data</h3>
+                <p class="text-gray-500">Data keuangan Anda dienkripsi tingkat tinggi dan tidak akan pernah dibagikan ke pihak ketiga.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING (SESUAI UPGRADE_PAGE.DART) -->
+    <section id="pricing" class="py-20 bg-gray-50 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Pilih Paket Credits</h2>
+                <p class="text-gray-500 mt-4">Top up sesuai kebutuhan. Tanpa biaya langganan bulanan.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white p-8 rounded-3xl border shadow-sm">
+                    <h3 class="font-bold text-gray-500 uppercase tracking-widest text-sm">Paket Cobain</h3>
+                    <div class="text-4xl font-bold mt-4">Rp 3.000</div>
+                    <ul class="mt-8 space-y-4 text-gray-600">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> 40 Credits</li>
+                        <li class="text-sm text-gray-400 italic">Estimasi: 10 Scan + 20 Chat</li>
+                    </ul>
+                </div>
+                <!-- Paket 2 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-blue-600 shadow-xl relative scale-105">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Best Value</div>
+                    <h3 class="font-bold text-gray-500 uppercase tracking-widest text-sm">Paket Rutin</h3>
+                    <div class="text-4xl font-bold mt-4">Rp 10.000</div>
+                    <ul class="mt-8 space-y-4 text-gray-600">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> 200 Credits</li>
+                        <li class="text-sm text-gray-400 italic">Estimasi: 60 Scan + 80 Chat</li>
+                    </ul>
+                </div>
+                <!-- Paket 3 -->
+                <div class="bg-white p-8 rounded-3xl border shadow-sm">
+                    <h3 class="font-bold text-gray-500 uppercase tracking-widest text-sm">Paket Master</h3>
+                    <div class="text-4xl font-bold mt-4">Rp 25.000</div>
+                    <ul class="mt-8 space-y-4 text-gray-600">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> 600 Credits</li>
+                        <li class="text-sm text-gray-400 italic">Estimasi: 200 Scan + 200 Chat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (WAJIB UNTUK PAYMENT GATEWAY) -->
+    <footer class="bg-gray-900 text-white py-16 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div>
+                <div class="text-2xl font-bold mb-6">Fynance</div>
+                <p class="text-gray-400 text-sm">Solusi cerdas manajemen keuangan berbasis AI untuk individu dan UMKM.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 italic text-blue-400">Legal</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="hover:text-white">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-white">Kebijakan Pengembalian Dana</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 italic text-blue-400">Dukungan</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li>Bantuan & FAQ</li>
+                    <li>support@fynance.id</li>
+                    <li>WhatsApp: +62 812-XXXX-XXXX</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 italic text-blue-400">Metode Pembayaran</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-800 px-3 py-1 rounded text-[10px]">QRIS</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded text-[10px]">VA Bank</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded text-[10px]">E-Wallet</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs">
+            &copy; 2024 Fynance App (PT. Nama Perusahaan Kamu). Semua hak dilindungi undang-undang.
+        </div>
+    </footer>
+
+</body>
+</html>
